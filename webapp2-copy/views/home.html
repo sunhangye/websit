@@ -1,0 +1,140 @@
+<div ng-controller="homeController">
+    <div class="middle-view" ui-view>
+        <!--轮播图-->
+        <div class="focusimg clearfix big-w">
+            <div class="slides-box">
+                <ul class="slides">
+                    <li style="background-image: url('./img/banner3.jpg')"></li>
+                    <li style="background-image: url('./img/banner1.jpg')"></li>
+                    <li style="background-image: url('./img/banner2.jpg')"></li>
+                </ul>
+            </div>
+        </div>
+        <!--游戏介绍-->
+        <div class="intro margin clearfix">
+            <div class="intro-img fl">
+                <img src="./img/left-img.jpg" alt="" style="width: 100%;height: 100%">
+            </div>
+            <div class="intro-text fl">
+                <div class="intro-text-top">
+                    <img src="img/guangdong-icron.png" alt="" class="game-icon">
+                    <span class="game-name">悠悠广东麻将</span>
+                </div>
+                <p>Is constantly evolving to experiences for games.</p>
+                <p>悠悠广东麻将采用广东地区经典麻将游戏规则，为玩家呈现原汁原味的广东麻将游戏。游戏支持一键登录，万人在线实时竞技。告别等待极速开局。感兴趣的玩家现在就下载体验吧！</p>
+                <div class="intro-text-btn">
+                    <button onclick="window.open('https://itunes.apple.com/cn/app/id1215556897')">IOS版</button>
+                    <button onclick="window.open('http://a.app.qq.com/o/simple.jsp?pkgname=com.quanlai.guangdongmj')">Android版</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg bg-sx">
+            <div class="intro margin clearfix">
+
+                <div class="intro-text fl">
+                    <div class="intro-text-top">
+                        <img src="img/shanxi-icron.png" alt="" class="game-icon">
+                        <span class="game-name">星烁陕西麻将</span>
+                    </div>
+                    <p>Is constantly evolving to experiences for games.</p>
+                    <p>星烁陕西麻将以陕西地区流行的玩法为基准开发的地方特色麻将，陕西麻将玩法简单、爽快，倍受广大玩家好评，极具特色的下炮子玩法让陕西麻将更加刺激，更加好玩！</p>
+                    <div class="intro-text-btn">
+                        <button onclick="window.open('https://itunes.apple.com/cn/app/id1215559487')">IOS版</button>
+                        <button onclick="window.open('http://a.app.qq.com/o/simple.jsp?pkgname=com.quanlai.shaanximj')">Android版</button>
+                    </div>
+                </div>
+
+                <div class="intro-img fl">
+                    <img src="./img/shanxirole.png" alt="" class="role shanxirole">
+                </div>
+            </div>
+        </div>
+        <div class="bg bg-sc">
+            <div class="intro margin clearfix">
+                <div class="intro-text fr">
+                    <div class="intro-text-top">
+                        <img src="img/sc-icon.png" alt="" class="game-icon">
+                        <span class="game-name">乐趣四川麻将</span>
+                    </div>
+                    <p>Is constantly evolving to experiences for games.</p>
+                    <p>
+                        乐趣四川麻将根据四川本地玩法为核心，打缺门，刮风下雨，血战到底等特色玩法，而逐步流行起来的移动游戏。<br>
+                        我们还加入了血流成河、宜宾麻将、三人两房、三人三房等特色玩法，同时还可选自摸加底、自摸加番等规则，让大家打得激烈尽兴，体验到不同玩法的游戏乐趣！
+                    </p>
+                    <div class="intro-text-btn">
+                        <button onclick="window.open('https://itunes.apple.com/cn/app/id1213684935')">IOS版</button>
+                        <button onclick="window.open('http://a.app.qq.com/o/simple.jsp?pkgname=com.quanlai.sichuanmj')">Android版</button>
+                    </div>
+                </div>
+                <div class="intro-img fl">
+                    <img src="./img/scrole.png" alt="" class="role scrole">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="break-line"></div>
+        
+        <div class="news">
+            <div class="margin">
+                <div class="title clearfix">
+                    <span class="fl">新闻资讯</span>
+                    <a ui-sref="newsActivity" class="fr">更多新闻 >></a>
+                </div>
+            </div>
+
+            <div class="solid-line"></div>
+
+            <div class="margin">
+                <ul class="news-list">
+                    <li>
+                        <img src="./img/safe-green.jpg" alt="" class="">
+                        <div class="content fr">
+                            <div class="head">
+                                <a ui-sref="news_green" ui-view="autoscroll" class="title">
+                                    安全绿色 绝无外挂
+                                </a>
+                                <p class="txt time">
+                                    2017-04-12
+                                </p>
+                            </div>
+                            <div class="dashed-line"></div>
+                            <div class="brief">
+                                亲爱的玩家，大家好：近期收到一些反馈，某些别有用心的谋利者，向外散布“善豹游戏”有外挂、作弊器的谣言，利用玩家想要获得游戏胜利的心里，进行金钱上的诈骗，请各位玩家提高警惕，谨防上当受骗... ...
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/no-play.jpg" alt="">
+                        <div class="content">
+                            <div class="head">
+                                <a ui-sref="news_joy" class="title">
+                                    仅供娱乐 禁止赌博
+                                </a>
+                                <p class="txt time">
+                                    2017-04-18
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="brief">
+                                亲爱的玩家，大家好：《善豹游戏》全力为广大玩家打造一个健康绿色的棋牌电玩竞技娱乐平台，提倡健康休闲游戏理念，坚决打击以任何形式私下转账、发红包赌博等非法行为... ...
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+

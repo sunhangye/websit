@@ -1,0 +1,124 @@
+@mixin transition($trtime) {
+  -webkit-transition:all $trtime+s ease-out;
+  -moz-transition:all $trtime+s ease-out;
+  transition:all $trtime+s ease-out;
+}
+
+.focusimg{
+  width: 100%;
+  height: 442px;
+  margin: auto;
+  position: relative;
+  .slides-box{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+    .prev,.next{
+      position: absolute;
+      z-index: 99;
+      top: 50%;
+      height: 48px;
+      width: 48px;
+      overflow: hidden;
+      cursor: pointer;
+      opacity: 0;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      @include transition(.5);
+    }
+    .prev:hover,.next:hover{
+      opacity: .8;
+    }
+    .prev{
+      left: 10px;
+      background-image: url("../img/prev.png");
+    }
+    .next{
+      right: 10px;
+      background-image: url("../img/next.png");
+    }
+
+    .pagination{
+      position: absolute;
+      bottom: 5px;
+      z-index: 99;
+      li{
+        padding: 5px 5px;
+        float: left;
+        a{
+          display: block;
+          width: 15px;
+          height: 10px;
+          line-height: 25px;
+          border-radius: 25px;
+          background: #fff;
+          color: #fff;
+          text-align: center;
+          font-family: Arial;
+          text-decoration: none;
+          opacity: 0.4;
+          background-repeat: no-repeat;
+          @include transition (.5);
+        }
+        a:hover{
+          opacity: 0.6;
+        }
+      }
+    }
+    .pagination .active{
+      opacity: 0.8;
+      background-color: #fdd004;
+    }
+
+    .slides{
+      width: 100%;
+      height: 100%;
+      float: left;
+      margin: auto;
+      li{
+        display: block;
+        position: absolute;
+        width:  100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        img{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
+      }
+    }
+  }
+  .slides-box:hover .prev,.slides-box:hover .next{
+    opacity: .3;
+  }
+}
+
+.small-banner{
+  height: 130px!important;
+  .li-text{
+    width: 980px;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding-top: 3%;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 2px;
+
+    .text-title{
+      font-weight: 900;
+      display: block;
+
+    }
+
+
+
+  }
+}
+

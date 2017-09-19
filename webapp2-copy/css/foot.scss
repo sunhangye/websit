@@ -1,0 +1,48 @@
+.footer-action{
+  width: 100%;
+  .margin{
+    padding: 50px 0 10px 0;
+
+  }
+  img{
+    margin-top: -8px;
+  }
+  .footer-nav{
+    margin-left: 80px;
+
+    li{
+      float: left;
+      margin-right: 50px;
+      a{
+        font-size: 16px;
+        color: #767785;
+        font-weight: 500;
+      }
+    }
+  }
+  p{
+    margin: 50px 0 15px 0;
+    font-size: 15px;
+    color: #e9573d;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+}
+
+.footer-intro{
+  width: 100%;
+  background-color: #282828;
+  text-align: center;
+  .margin{
+    padding: 30px 0;
+    vertical-align: middle;
+  }
+  .txt{
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #a1a1a1;
+
+  }
+}

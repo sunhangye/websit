@@ -1,0 +1,117 @@
+.load-top {
+  margin-top: 40px !important;
+  margin-bottom: 60px !important;
+  display: flex;
+  justify-content: space-between; }
+  .load-top .top-left {
+    flex: 1; }
+    .load-top .top-left .left {
+      display: inline-block;
+      margin-right: 30px; }
+      .load-top .top-left .left img {
+        width: 120px;
+        height: 120px; }
+    .load-top .top-left .right label {
+      display: block;
+      font-size: 13px;
+      color: #afafaf;
+      font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
+      line-height: 28px;
+      font-weight: 900; }
+    .load-top .top-left .right label:first-of-type {
+      color: #2d8efa;
+      font-size: 24px;
+      line-height: 50px; }
+  .load-top .top-right {
+    width: 450px; }
+    .load-top .top-right h6 {
+      font-size: 18px;
+      color: #afafaf;
+      font-weight: 700;
+      line-height: 40px;
+      margin-bottom: 20px; }
+    .load-top .top-right button {
+      display: inline-block;
+      font-size: 14px;
+      color: #fff;
+      width: 120px;
+      height: 38px;
+      font-weight: 800; }
+    .load-top .top-right button:nth-of-type(1) {
+      background: url("../img/ios.png") no-repeat center;
+      background-size: 100%;
+      margin-right: 15px; }
+    .load-top .top-right button:nth-of-type(2) {
+      background: url("../img/android.png") no-repeat center;
+      background-size: 100%; }
+
+.load-middle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px !important;
+  margin-bottom: 80px !important; }
+  .load-middle .middle-left {
+    margin-right: 100px; }
+    .load-middle .middle-left .title {
+      font-size: 18px;
+      padding-left: 10px;
+      font-weight: 800;
+      color: #000;
+      font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
+      border-left: 4px solid #2d8efa;
+      margin-bottom: 25px; }
+    .load-middle .middle-left p {
+      font-size: 14px;
+      color: #7d7d7d;
+      line-height: 40px;
+      font-weight: 600; }
+  .load-middle .wrap {
+    width: 450px; }
+    .load-middle .wrap .middle-right {
+      padding: 20px 50px 30px 30px;
+      margin-top: 40px;
+      border: 1px solid #e5e5e5;
+      vertical-align: middle;
+      position: relative; }
+      .load-middle .wrap .middle-right .left {
+        display: inline-block;
+        margin-right: 20px; }
+      .load-middle .wrap .middle-right .right {
+        display: inline-block; }
+        .load-middle .wrap .middle-right .right label {
+          display: block;
+          font-size: 13px;
+          color: #afafaf;
+          font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
+          line-height: 28px;
+          font-weight: 900; }
+        .load-middle .wrap .middle-right .right label:first-of-type {
+          color: #222;
+          font-size: 14px;
+          line-height: 50px; }
+      .load-middle .wrap .middle-right .scan {
+        position: absolute;
+        right: 0;
+        top: 0; }
+
+.load-bottom {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important; }
+  .load-bottom .title {
+    font-size: 18px;
+    color: #000;
+    padding-left: 10px;
+    border-left: 4px solid #2d8efa;
+    font-weight: 800; }
+  .load-bottom .screenshot {
+    margin-top: 40px;
+    display: flex; }
+    .load-bottom .screenshot .item {
+      flex: 1; }
+      .load-bottom .screenshot .item img {
+        display: inline-block;
+        width: 305px; }
+    .load-bottom .screenshot .item:nth-of-type(2) {
+      margin: 0 28px; }
+
+/*# sourceMappingURL=download.css.map */

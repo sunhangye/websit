@@ -1,0 +1,149 @@
+
+.load-top{
+  margin-top: 40px !important;
+  margin-bottom: 60px !important;
+  display: flex;
+  justify-content: space-between;
+  .top-left{
+    flex: 1;
+    .left{
+      display: inline-block;
+      margin-right: 30px;
+      img{
+        width: 120px;
+        height: 120px;
+      }
+    }
+    .right{
+      label{
+        display: block;
+        font-size: 13px;
+        color: #afafaf;
+        font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
+        line-height: 28px;
+        font-weight: 900;
+      }
+      label:first-of-type{
+        color: #2d8efa;
+        font-size: 24px;
+        line-height: 50px;
+      }
+
+    }
+  }
+  .top-right{
+    width: 450px;
+    h6{
+      font-size: 18px;
+      color: #afafaf;
+      font-weight: 700;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+    button{
+      display: inline-block;
+      font-size: 14px;
+      color: #fff;
+      width: 120px;
+      height: 38px;
+      font-weight: 800;
+    }
+    button:nth-of-type(1){
+      background: url("../img/ios.png") no-repeat center;
+      background-size: 100%;
+      margin-right: 15px;
+    }
+    button:nth-of-type(2){
+      background: url("../img/android.png") no-repeat center;
+      background-size: 100%;
+    }
+  }
+}
+
+.load-middle{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px!important;
+  margin-bottom: 80px!important;
+  .middle-left{
+    margin-right: 100px;
+    .title{
+      font-size: 18px;
+      padding-left: 10px;
+      font-weight: 800;
+      color: #000;
+      font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
+      border-left: 4px solid #2d8efa;
+      margin-bottom: 25px;
+    }
+    p{
+      font-size: 14px;
+      color: #7d7d7d;
+      line-height: 40px;
+      font-weight: 600;
+    }
+  }
+  .wrap{
+    width: 450px;
+    .middle-right{
+      padding: 20px 50px 30px 30px;
+      margin-top: 40px;
+      border: 1px solid #e5e5e5;
+      vertical-align: middle;
+      position: relative;
+      .left{
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .right{
+        display: inline-block;
+        label{
+          display: block;
+          font-size: 13px;
+          color: #afafaf;
+          font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
+          line-height: 28px;
+          font-weight: 900;
+        }
+        label:first-of-type{
+          color: #222;
+          font-size: 14px;
+          line-height: 50px;
+        }
+      }
+      .scan{
+        position: absolute;
+        right: 0;
+        top:0;
+      }
+
+    }
+  }
+}
+
+.load-bottom{
+  margin-top: 40px!important;
+  margin-bottom: 40px!important;
+  .title{
+    font-size: 18px;
+    color: #000;
+    padding-left: 10px;
+    border-left: 4px solid #2d8efa;
+    font-weight: 800;
+  }
+  .screenshot{
+    margin-top: 40px;
+    display: flex;
+    .item{
+      flex: 1;
+      img{
+        display: inline-block;
+        width: 305px;
+      }
+    }
+    .item:nth-of-type(2){
+      margin: 0 28px;
+
+    }
+  }
+}

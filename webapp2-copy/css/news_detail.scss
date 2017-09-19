@@ -1,0 +1,174 @@
+
+.detail{
+  margin: 70px auto 40px;
+  .title{
+    font-size: 18px;
+    color: #222;
+    font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
+    margin-bottom: 16px;
+    font-weight: bolder;
+  }
+  .date{
+    display: inline-block;
+    font-size: 13px;
+    color: #2d8efa;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+  }
+  .img-wrap{
+    margin-top: 20px;
+    text-align: center;
+  }
+  strong{
+    font-size: 16px;
+    color: #3e3e3e;
+  }
+  big{
+    font-weight: bolder;
+  }
+
+  p{
+    font-size: 13px;
+    color: #87878a;
+    line-height: 25px;
+    text-indent: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 28px;
+    text-indent: 2em;
+
+  }
+
+  .illustration{
+    width: 100%;
+    height: 280px;
+    margin: 30px 0px;
+  }
+
+}
+.followMe{
+  text-align: center;
+  margin-bottom: 20px;
+  .wechatQR{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 14px;
+    color: #87878a;
+    font-weight: 600;
+    line-height: 25px;
+  }
+}
+.margin-auto{
+  display: inherit;
+  margin: 20px auto;
+  text-align: center;
+}
+.img-auto{
+  width: 68%;
+  margin: 20px auto 0px;
+}
+
+
+.loseinself{
+  margin: 70px auto 40px;
+  color: #424242;
+  .title{
+    font-weight: 400;
+    font-size: 18px;
+    color: #222;
+    line-height: 27px;
+    margin: 10px 0;
+  }
+  p{
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #87878a;
+    font-weight: 600;
+    line-height: 30px;
+    &.indent{
+      text-indent: 2em;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    &.indent4{
+      text-indent: 3em;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+};
+
+.parent-custody{
+  margin-top: 30px!important;
+  line-height: 28px;
+  color: #424242;
+  width: 60%;
+  .menu{
+    margin: 20px auto 50px;
+    li{
+      width: 33.3%;
+      border-right: 1px solid #ccc;
+      display: inline-block;
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+      &:last-child{
+        border-right: none;
+      }
+      &.active{
+        padding: 10px 0;
+        font-size: 18px;
+        color: #ff9966;
+      }
+    }
+  }
+  .item{
+    .content{
+      margin-bottom: 20px;
+      p{
+        text-indent: 2em;
+      }
+      .title{
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+      .big{
+        font-size: 18px;
+        color: rgb(55,63,66);
+        .little{
+          font-size: 14px;
+        }
+      }
+      .heading{
+        color: rgb(55,63,66);
+        font-weight: bolder;
+        font-size: 18px;
+        margin-bottom: 2px;
+        & +p{
+          text-indent: 0;
+          a{
+            color: #3e8afa;
+
+          }
+
+        }
+      }
+      .post-code{
+        margin-top: 20px;
+      }
+      img.process{
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+
+}
+

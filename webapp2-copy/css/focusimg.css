@@ -1,0 +1,96 @@
+.focusimg {
+  width: 100%;
+  height: 442px;
+  margin: auto;
+  position: relative; }
+  .focusimg .slides-box {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative; }
+    .focusimg .slides-box .prev, .focusimg .slides-box .next {
+      position: absolute;
+      z-index: 99;
+      top: 50%;
+      height: 48px;
+      width: 48px;
+      overflow: hidden;
+      cursor: pointer;
+      opacity: 0;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
+    .focusimg .slides-box .prev:hover, .focusimg .slides-box .next:hover {
+      opacity: .8; }
+    .focusimg .slides-box .prev {
+      left: 10px;
+      background-image: url("../img/prev.png"); }
+    .focusimg .slides-box .next {
+      right: 10px;
+      background-image: url("../img/next.png"); }
+    .focusimg .slides-box .pagination {
+      position: absolute;
+      bottom: 5px;
+      z-index: 99; }
+      .focusimg .slides-box .pagination li {
+        padding: 5px 5px;
+        float: left; }
+        .focusimg .slides-box .pagination li a {
+          display: block;
+          width: 15px;
+          height: 10px;
+          line-height: 25px;
+          border-radius: 25px;
+          background: #fff;
+          color: #fff;
+          text-align: center;
+          font-family: Arial;
+          text-decoration: none;
+          opacity: 0.4;
+          background-repeat: no-repeat;
+          -webkit-transition: all 0.5s ease-out;
+          -moz-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out; }
+        .focusimg .slides-box .pagination li a:hover {
+          opacity: 0.6; }
+    .focusimg .slides-box .pagination .active {
+      opacity: 0.8;
+      background-color: #fdd004; }
+    .focusimg .slides-box .slides {
+      width: 100%;
+      height: 100%;
+      float: left;
+      margin: auto; }
+      .focusimg .slides-box .slides li {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+        .focusimg .slides-box .slides li img {
+          display: block;
+          width: 100%;
+          height: 100%; }
+  .focusimg .slides-box:hover .prev, .focusimg .slides-box:hover .next {
+    opacity: .3; }
+
+.small-banner {
+  height: 130px !important; }
+  .small-banner .li-text {
+    width: 980px;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding-top: 3%;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 2px; }
+    .small-banner .li-text .text-title {
+      font-weight: 900;
+      display: block; }
+
+/*# sourceMappingURL=focusimg.css.map */

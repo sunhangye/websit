@@ -1,0 +1,186 @@
+
+@mixin transition($trtime) {
+  -webkit-transition:all $trtime+s ease-out;
+  -moz-transition:all $trtime+s ease-out;
+  transition:all $trtime+s ease-out;
+}
+.big-w{
+  height: 442px;
+}
+.intro{
+  height: 400px;
+  margin-top: 50px !important;
+  .intro-img,.intro-text{
+    width: 49%;
+  }
+  .intro-img img{
+    float: left;
+    text-align: left;
+    width: 476px;
+    height: 290px;
+  }
+  .intro-text{
+    margin-left: 2%;
+    .intro-text-top{
+      display: inline-block;
+      vertical-align: middle;
+      .game-icon{
+        display: inline-block;
+        vertical-align: middle;
+        width: 80px;
+        height: 80px;
+      }
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 30px;
+      }
+      span.game-name{
+        font-size: 24px;
+        color: #2d8efa;
+        font-weight: 900;
+        padding-bottom: 10px;
+        border-bottom: 4px solid #2d8efa;
+      }
+    }
+    p:nth-of-type(1){
+      color: #4f4f4f;
+      font-size: 22px;
+      padding: 5px 0;
+      font-family: MyriadPro-Regular;
+      white-space: nowrap;
+    }
+    p:nth-of-type(2){
+      color: #7d7d7d;
+      font-size: 14px;
+      padding-top: 25px;
+      line-height: 30px;
+    }
+    .intro-text-btn{
+      margin-top: 50px;
+      button:nth-of-type(1){
+        background-color: #f72051;
+        color: #fff;
+        border-radius: 15px;
+        margin-right: 20px;
+        font-weight: 600;
+        padding: 5px 30px;
+      }
+      button:nth-of-type(2){
+        background: #fff;
+        color: #f72051;
+        border: 1px solid #f72051;
+        border-radius: 15px;
+        padding: 5px 30px;
+      }
+    }
+  }
+}
+
+.bg{
+  width: 100%;
+  height: 460px;
+
+
+  .intro-text{
+    margin-top: 60px;
+  }
+  .intro-img{
+    .role{
+
+      height: 401px;
+      float: left;
+      text-align: left;
+      margin-top: 25px;
+
+    }
+    .shanxirole{
+      width: 407px;
+      margin-left: 60px;
+    }
+
+  }
+}
+
+.bg-sx{
+  background: url("../img/shanxinbg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.bg-sc{
+  background: url("../img/scbg.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.news{
+  width: 100%;
+  margin-top: 5px;
+  background-color: #fcfcfc;
+  .title{
+    position: relative;
+    padding: 15px 0;
+    span{
+      padding-left: 15px;
+      font-weight: 600;
+      font-size: 18px;
+      color: #222;
+      border-left: 4px solid #2d8efa;
+    }
+    a{
+      color: #979797;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+  }
+  .news-list{
+    padding-top: 36px;
+    li{
+      width: 100%;
+      display: inline-flex;
+      margin-bottom: 45px;
+      img{
+        display: inline-block;
+        width: 220px;
+        height: 169px;
+      }
+      .content{
+        margin-top:5px;
+        margin-left: 100px;
+        .head{
+          a{
+            font-size: 18px;
+            color: #333;
+            text-decoration: underline;
+            font-weight: 700;
+          }
+          a:visited{
+            color: #2d8efa;
+          }
+          .time{
+            font-size: 14px;
+            color: #87878a;
+            font-weight: 600;
+            padding-top: 15px;
+          }
+        }
+        .brief{
+          padding-top: 26px;
+          p{
+            font-size: 13px;
+            color: #87878a;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
