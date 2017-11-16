@@ -91,8 +91,8 @@
           line-height: 50px; }
       .load-middle .wrap .middle-right .scan {
         position: absolute;
-        right: 0;
-        top: 0; }
+        right: -8px;
+        top: -6px; }
 
 .load-bottom {
   margin-top: 40px !important;

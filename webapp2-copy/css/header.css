@@ -17,7 +17,8 @@
         width: 100%; }
     .header .header-con .header-con-nav {
       padding-left: 5%;
-      width: 70%; }
+      width: 80%;
+      height: 100%; }
       .header .header-con .header-con-nav a {
         color: #333;
         font-size: 16px;

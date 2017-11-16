@@ -1,138 +1,283 @@
 <div ng-controller="homeController">
-    <div class="middle-view" ui-view>
-        <!--轮播图-->
-        <div class="focusimg clearfix big-w">
-            <div class="slides-box">
-                <ul class="slides">
-                    <li style="background-image: url('./img/banner1.jpg')"></li>
-                    <li style="background-image: url('./img/banner2.jpg')"></li>
-                </ul>
-            </div>
+  <div class="middle-view" ui-view>
+    <!--轮播图-->
+    <div class="focusimg clearfix min-heigth" id="pic-scroll">
+        <div class="slides-box">
+            <ul class="slides">
+              <li style="background-image: url('./img/banner6.jpg?v=001')"></li>
+                <li style="background-image: url('./img/banner1.jpg?v=001')"></li>
+                <li style="background-image: url('./img/banner2.jpg?v=001')"></li>
+                <li style="background-image: url('./img/banner3.jpg?v=001')"></li>
+                <li style="background-image: url('./img/banner5.jpg?v=001')"></li>
+                <li style="background-image: url('./img/banner7.jpg?v=001')"></li>
+
+            </ul>
         </div>
-        <!--游戏介绍-->
-        <div class="intro margin clearfix">
-            <div class="intro-img fl">
-                <img src="./img/left-img.jpg" alt="" style="width: 100%;height: 100%">
-            </div>
-            <div class="intro-text fl">
-                <div class="intro-text-top">
-                    <img src="img/guangdong-icron.png" alt="" class="game-icon">
-                    <span class="game-name">悠悠广东麻将</span>
-                </div>
-                <p>Is constantly evolving to experiences for games.</p>
-                <p>悠悠广东麻将采用广东地区经典麻将游戏规则，为玩家呈现原汁原味的广东麻将游戏。游戏支持一键登录，万人在线实时竞技。告别等待极速开局。感兴趣的玩家现在就下载体验吧！</p>
-                <div class="intro-text-btn">
-                    <button onclick="window.open('https://itunes.apple.com/cn/app/id1215556897')">IOS版</button>
-                    <button onclick="window.open('http://a.app.qq.com/o/simple.jsp?pkgname=com.quanlai.guangdongmj')">Android版</button>
-                </div>
-            </div>
-        </div>
-        <div class="bg bg-sx">
-            <div class="intro margin clearfix">
-
-                <div class="intro-text fl">
-                    <div class="intro-text-top">
-                        <img src="img/shanxi-icron.png" alt="" class="game-icon">
-                        <span class="game-name">星烁陕西麻将</span>
-                    </div>
-                    <p>Is constantly evolving to experiences for games.</p>
-                    <p>星烁陕西麻将以陕西地区流行的玩法为基准开发的地方特色麻将，陕西麻将玩法简单、爽快，倍受广大玩家好评，极具特色的下炮子玩法让陕西麻将更加刺激，更加好玩！</p>
-                    <div class="intro-text-btn">
-                        <button onclick="window.open('https://itunes.apple.com/cn/app/id1215559487')">IOS版</button>
-                        <button onclick="window.open('http://a.app.qq.com/o/simple.jsp?pkgname=com.quanlai.shaanximj')">Android版</button>
-                    </div>
-                </div>
-
-                <div class="intro-img fl">
-                    <img src="./img/shanxirole.png" alt="" class="role shanxirole">
-                </div>
-            </div>
-        </div>
-        <div class="bg bg-sc">
-            <div class="intro margin clearfix">
-                <div class="intro-text fr">
-                    <div class="intro-text-top">
-                        <img src="img/sc-icon.png" alt="" class="game-icon">
-                        <span class="game-name">乐趣四川麻将</span>
-                    </div>
-                    <p>Is constantly evolving to experiences for games.</p>
-                    <p>
-                        乐趣四川麻将根据四川本地玩法为核心，打缺门，刮风下雨，血战到底等特色玩法，而逐步流行起来的移动游戏。<br>
-                        我们还加入了血流成河、宜宾麻将、三人两房、三人三房等特色玩法，同时还可选自摸加底、自摸加番等规则，让大家打得激烈尽兴，体验到不同玩法的游戏乐趣！
-                    </p>
-                    <div class="intro-text-btn">
-                        <button onclick="window.open('https://itunes.apple.com/cn/app/id1213684935')">IOS版</button>
-                        <button onclick="window.open('http://a.app.qq.com/o/simple.jsp?pkgname=com.quanlai.sichuanmj')">Android版</button>
-                    </div>
-                </div>
-                <div class="intro-img fl">
-                    <img src="./img/scrole.png" alt="" class="role scrole">
-                </div>
-
-            </div>
-        </div>
-
-        <!--<div class="break-line"></div>
-        <div class="news">
-            <div class="margin">
-                <div class="title clearfix">
-                    <span class="fl">新闻活动</span>
-                    <a ui-sref="newsActivity" class="fr">更多新闻 >></a>
-                </div>
-            </div>
-
-            <div class="solid-line"></div>
-
-            <div class="margin">
-                <ul class="news-list">
-                    <li>
-                        <img src="./img/safe-green.jpg" alt="" class="">
-                        <div class="content fr">
-                            <div class="head">
-                                <a ui-sref="news_green" ui-view="autoscroll" class="title">
-                                    安全绿色 绝无外挂
-                                </a>
-                                <p class="txt time">
-                                    2017-04-12
-                                </p>
-                            </div>
-                            <div class="dashed-line"></div>
-                            <div class="brief">
-                                亲爱的玩家，大家好：近期收到一些反馈，某些别有用心的谋利者，向外散布“善豹游戏”有外挂、作弊器的谣言，利用玩家想要获得游戏胜利的心里，进行金钱上的诈骗，请各位玩家提高警惕，谨防上当受骗... ...
-
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./img/no-play.jpg" alt="">
-                        <div class="content">
-                            <div class="head">
-                                <a ui-sref="news_joy" class="title">
-                                    仅供娱乐 禁止赌博
-                                </a>
-                                <p class="txt time">
-                                    2017-04-18
-                                </p>
-                            </div>
-                            <div class="line"></div>
-                            <div class="brief">
-                                亲爱的玩家，大家好：《善豹游戏》全力为广大玩家打造一个健康绿色的棋牌电玩竞技娱乐平台，提倡健康休闲游戏理念，坚决打击以任何形式私下转账、发红包赌博等非法行为... ...
-
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>-->
     </div>
+
+    <!--新闻版块-->
+    <div class="news">
+        <div class="margin">
+            <div class="title">
+                <span>新闻资讯</span>
+            </div>
+
+            <div class="news-wrap">
+                <ul class="news-list">
+                    <li class="news-item">
+                        <div class="clearfix">
+                            <a ui-sref="tv-game" ui-view="autoscroll" class="news-title">
+                                <img src="./img/news-flag.png" alt="" style="vertical-align: middle">
+                                湖南公共频道全来湖南麻将大赛开始了
+                            </a>
+                            <span class="news-time fr">2017-07-29</span>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <div class="clearfix">
+                            <a ui-sref="winner" ui-view="autoscroll" class="news-title">
+                                <img src="./img/news-flag.png" alt="" style="vertical-align: middle">
+                                乐趣四川麻将代表选手进入世界麻将大赛总决赛
+                            </a>
+                            <span class="news-time fr">2017-07-21</span>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <div class="clearfix">
+                            <a ui-sref="platform" ui-view="autoscroll" class="news-title">
+                                <img src="./img/news-flag.png" alt="" style="vertical-align: middle">
+                                第二届世界麻将运动会直通赛乐趣四川麻将线上海选正式启动！
+                            </a>
+                            <span class="news-time fr">2017-07-10</span>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <div class="clearfix">
+                            <a ui-sref="public_good" ui-view="autoscroll" class="news-title">
+                                <img src="./img/news-flag.png" alt="" style="vertical-align: middle">
+                                助力公益，情系湖南
+                            </a>
+                            <span class="news-time fr">2017-07-07</span>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="news-block">
+                    <a class="" ui-sref="promoter" ui-view="autoscroll">
+                        <img src="./img/promoter.png" alt="">
+                    </a>
+                    <a ui-sref="gemeCenter" ui-view="autoscroll">
+                        <img src="./img/download.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="background-color: #f6f7fb;padding-top: 25px;">
+        <div class="title margin">
+            <span>游戏中心</span>
+        </div>
+        <ul class="game margin clearfix" >
+
+            <li class="item">
+                <a ui-sref="download_hn">
+                    <img class="item-map" src="img/hunan.png" alt="">
+                    <div class="item-text">
+                        <p>全来湖南麻将</p>
+                        <p>
+                            湖南地区最流行的麻将规则，转转麻将，长沙麻将等每种玩法绝对正宗、特色还原！
+
+                        </p>
+                        <div class="color-f0f0f0"></div>
+                        <p>进入下载</p>
+                    </div>
+
+                    <img class="new" src="./img/new.png" alt="">
+                    <!--<div class="popover clearfix animated fadeInRight">
+                        <span>评分</span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="red"><b>12万</b>次下载</span>
+                        <img src="./img/hunan-qr-sm.png" alt="" class="QRcode">
+                        <span>扫描即可下载</span>
+                        <button class="download">下载游戏</button>
+                    </div>-->
+                </a>
+            </li>
+            <li class="item">
+                <a ui-sref="download_gd">
+                    <img class="" src="img/guangdong.png" alt="" >
+
+                    <div class="item-text">
+                        <p>悠悠广东麻将</p>
+                        <p>经典的广东麻将玩法，简单易上手，特色玩法买马、鬼牌等，另有更多胡牌方式！</p>
+                        <div class="color-f0f0f0"></div>
+                        <p>进入下载</p>
+                    </div>
+                    <img class="new" src="./img/new.png" alt="">
+                    <!--<div class="popover clearfix animated fadeInRight">
+                        <span>评分</span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="red"><b>12万</b>次下载</span>
+                        <img src="./img/guangdong-qr-sm.png" alt="" class="QRcode">
+                        <span>扫描即可下载</span>
+                        <button class="download">下载游戏</button>
+                    </div>-->
+                </a>
+            </li>
+            <!--<li class="item">
+                <a ui-sref="download_gd">
+                    <img class="" src="img/doudizhu.jpg" alt="" >
+
+                    <div class="item-text">
+                        <p>先锋斗地主</p>
+                        <p>经典的广东麻将玩法，简单易上手，特色玩法买马、鬼牌等，另有更多胡牌方式！</p>
+                        <div class="color-f0f0f0"></div>
+                        <p>进入下载</p>
+                    </div>
+                    <img class="new" src="./img/new.png" alt="">
+
+                    &lt;!&ndash;<div class="popover clearfix animated fadeInRight">
+                        <span>评分</span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="red"><b>12万</b>次下载</span>
+                        <img src="./img/guangdong-qr-sm.png" alt="" class="QRcode">
+                        <span>扫描即可下载</span>
+                        <button class="download">下载游戏</button>
+                    </div>&ndash;&gt;
+                </a>
+            </li>-->
+            <li class="item">
+                <a ui-sref="download_sx">
+                    <img class="" src="img/shanxi.jpg" alt="" >
+
+                    <div class="item-text">
+                        <p>星烁陕西麻将</p>
+                        <p>最最经典的陕西麻将，特色下炮子玩法、258硬将、七小对等等！胡到根本停不下来！</p>
+                        <div class="color-f0f0f0"></div>
+                        <p>进入下载</p>
+                    </div>
+                    <img class="new" src="./img/new.png" alt="">
+                    <!--<div class="popover clearfix animated fadeInRight">
+                        <span>评分</span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="red"><b>12万</b>次下载</span>
+                        <img src="./img/shanxi-qr-sm.png" alt="" class="QRcode">
+                        <span>扫描即可下载</span>
+                        <button class="download">下载游戏</button>
+                    </div>-->
+                </a>
+            </li>
+            <li class="item" >
+                <a ui-sref="download_pdk">
+                    <img class="" src="img/paodekuai.jpg" alt="" >
+
+                    <div class="item-text">
+                        <p>先锋跑得快</p>
+                        <p>超丰富玩法，想要的都有；全面升级，欢乐依旧；呼朋唤友，熟人娱乐！</p>
+                        <div class="color-f0f0f0"></div>
+                        <p>进入下载</p>
+                    </div>
+                    <img class="new" src="./img/new.png" alt="">
+                    <!--<div class="popover clearfix animated fadeInRight">
+                        <span>评分</span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="red"><b>12万</b>次下载</span>
+                        <img src="./img/paodekuai-qr-sm.png" alt="" class="QRcode">
+                        <span>扫描即可下载</span>
+                        <button class="download">下载游戏</button>
+                    </div>-->
+                </a>
+            </li>
+            <li class="item">
+                <a ui-sref="download_hain">
+                    <img class="" src="img/hainan.jpg" alt="" >
+
+                    <div class="item-text">
+                        <p>优优海南麻将</p>
+                        <p>海南地区特有的麻将规则而推出的地方性麻将，玩法简单，计算方便！</p>
+                        <div class="color-f0f0f0"></div>
+                        <p>进入下载</p>
+                    </div>
+                    <img class="new" src="./img/new.png" alt="">
+                    <!--<div class="popover clearfix animated fadeInRight">
+                        <span>评分</span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="red"><b>12万</b>次下载</span>
+                        <img src="./img/hainan-qr-sm.png" alt="" class="QRcode">
+                        <span>扫描即可下载</span>
+                        <button class="download">下载游戏</button>
+                    </div>-->
+                </a>
+            </li>
+            <li class="item">
+                <a ui-sref="download_sc">
+                    <img class="" src="img/sc.jpg" alt="" >
+
+                    <div class="item-text">
+                        <p>乐趣四川麻将</p>
+                        <p>四川地区最流行的麻将游戏，特色缺门、刮风下雨等；快来下载体验，保证让你爱不释手！</p>
+                        <div class="color-f0f0f0"></div>
+                        <p>进入下载</p>
+                    </div>
+                    <img class="new" src="./img/new.png" alt="">
+                    <!--<div class="popover clearfix animated fadeInRight">
+                        <span>评分</span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <span class="red"><b>11万</b>次下载</span>
+                        <img src="./img/sc-qr-sm.png" alt="" class="QRcode">
+                        <span>扫描即可下载</span>
+                        <button class="download">下载游戏</button>
+                    </div>-->
+                </a>
+            </li>
+        </ul>
+    </div>
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
-

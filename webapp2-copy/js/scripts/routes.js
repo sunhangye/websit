@@ -71,14 +71,18 @@
                 allowAnonymous: true
             },
 
-
+             'promoter': {
+              templateUrl: 'views/news/promoter.html',
+               url:'/promoter',
+               dependencies: ['controller/homeController'],
+               allowAnonymous: true
+            },
             'tv-game': {
                 templateUrl: 'views/news/tv-game.html',
                 url:'/tv',
                 dependencies: ['controller/homeController'],
                 allowAnonymous: true
             },
-
 
             'winner': {
                 templateUrl: 'views/news/winner.html',

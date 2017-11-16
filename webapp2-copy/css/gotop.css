@@ -1,9 +1,8 @@
 .gotop{
-    width:40px;
-    height:40px;
-    line-height:40px;
-    background: url("../img/up.png");
-    background-color: #eee;
+    width:138px;
+    height:219px;
+    line-height:219px;
+    background: url("../img/wechat.png");
     color:#fff;
     text-align:center;
     position:fixed;
@@ -12,7 +11,7 @@
     cursor:pointer;
     font-size:16px;
     display: none;
-    opacity: 0.7;
+    opacity: 1;
     font-weight: bold;
     border-radius: 5px;
     overflow: hidden;

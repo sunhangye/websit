@@ -3284,8 +3284,8 @@ Copyright (c) 2014 Daniel Eden
           line-height: 50px; }
       .load-middle .wrap .middle-right .scan {
         position: absolute;
-        right: 0;
-        top: 0; }
+        right: -8px;
+        top: -6px; }
 
 .load-bottom {
   margin-top: 40px !important;
@@ -3407,7 +3407,7 @@ Copyright (c) 2014 Daniel Eden
 .footer-action {
   width: 100%; }
   .footer-action .margin {
-    padding: 50px 0 10px 0; }
+    padding: 30px 0 10px 0; }
   .footer-action img {
     margin-top: -8px; }
   .footer-action .footer-nav {
@@ -3450,116 +3450,118 @@ Copyright (c) 2014 Daniel Eden
   margin-bottom: 20px;
   font-weight: 900; }
 
-.game {
-  padding-top: 50px !important;
-  margin-bottom: 50px !important;
-  font-size: 0;
-  position: relative; }
-  .game .item {
-    float: left;
-    box-sizing: border-box;
-    margin-right: 2%;
-    margin-bottom: 50px;
-    text-align: center;
+.home-game {
+  background-color: #f5f5f5; }
+  .home-game img {
+    width: 100%; }
+  .home-game .title {
     position: relative;
-    width: 32%; }
-    .game .item > a {
-      display: inline-block; }
-    .game .item img:nth-of-type(1) {
-      position: relative; }
-    .game .item .item-text {
-      width: 100%;
-      margin: 0 auto;
-      padding: 16px 20px 0;
-      text-align: left;
-      padding-top: 10px;
-      background-color: #fff; }
-      .game .item .item-text p:nth-of-type(1) {
-        font-size: 18px;
-        color: #222;
-        cursor: pointer;
-        font-weight: 900; }
-      .game .item .item-text p:nth-of-type(2) {
-        margin-top: 6px;
+    padding: 15px 0; }
+    .home-game .title span {
+      padding-left: 15px;
+      font-weight: 600;
+      font-size: 18px;
+      color: #222;
+      border-left: 4px solid #2d8efa; }
+    .home-game .title a {
+      color: #979797;
+      font-size: 17px;
+      font-weight: 600; }
+  .home-game .row-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 15px; }
+    .home-game .row-wrap a {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin-right: 5px; }
+      .home-game .row-wrap a:last-child {
+        margin-right: 0; }
+  .home-game .column-wrap {
+    -webkit-column-count: 3;
+            column-count: 3;
+    background-color: #f5f5f5; }
+    .home-game .column-wrap .sx-wrap {
+      -webkit-column-break-inside: avoid;
+              break-inside: avoid;
+      font-size: 0;
+      background-color: #f5f5f5; }
+      .home-game .column-wrap .sx-wrap .item-text {
+        width: 100%;
+        margin: 0 auto;
+        padding: 16px 20px 0;
         text-align: left;
-        line-height: 22px;
-        font-size: 13px;
-        color: #a9a9a9;
-        font-weight: 700;
-        margin-bottom: 20px; }
-      .game .item .item-text p:nth-of-type(3) {
-        text-align: right;
-        color: #9db2c5;
-        font-size: 12px;
-        padding: 6px 0 10px 0; }
-      .game .item .item-text .color-f0f0f0 {
-        width: 100%;
-        height: 1px;
-        background-color: #f0f0f0; }
-    .game .item .new {
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: 9; }
-    .game .item .popover {
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      width: 50%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.8);
-      opacity: 1;
-      vertical-align: middle;
-      padding-top: 15px;
-      -webkit-transition: all 0.5s linear;
-      transition: all 0.5s linear;
-      display: none; }
-      .game .item .popover span {
-        display: inline-block;
-        font-size: 10px;
-        color: #222;
-        padding-bottom: 5px;
-        width: 100%;
-        font-weight: 800; }
-      .game .item .popover span.red {
-        color: red;
-        padding-bottom: 10px; }
-      .game .item .popover ul {
-        float: left;
-        text-align: right;
-        padding-left: 34px;
-        padding-bottom: 8px; }
-        .game .item .popover ul li {
-          float: left;
-          background: url("../img/star.png") no-repeat center;
-          background-size: 100%;
-          width: 12px;
-          height: 12px;
-          margin-left: 5px; }
-      .game .item .popover .QRcode {
-        margin-bottom: 5px;
-        width: 65px;
-        height: 65px; }
-      .game .item .popover button.download {
-        width: 96px;
-        height: 24px;
-        border-radius: 10px;
-        background-color: #3e8afa;
-        font-size: 14px;
-        color: #f8f8f8;
-        text-align: center;
-        line-height: 10px; }
-    .game .item:hover .popover {
-      display: block; }
-  .game .item:nth-child(3n) {
-    margin-right: 0; }
+        padding-top: 10px;
+        background-color: #fff; }
+        .home-game .column-wrap .sx-wrap .item-text p:nth-of-type(1) {
+          font-size: 18px;
+          color: #222;
+          cursor: pointer;
+          font-weight: 900; }
+        .home-game .column-wrap .sx-wrap .item-text p:nth-of-type(2) {
+          margin-top: 6px;
+          text-align: left;
+          line-height: 22px;
+          font-size: 13px;
+          color: #a9a9a9;
+          font-weight: 700;
+          margin-bottom: 20px; }
+        .home-game .column-wrap .sx-wrap .item-text p:nth-of-type(3) {
+          text-align: right;
+          color: #9db2c5;
+          font-size: 12px;
+          padding: 6px 0 10px 0; }
+        .home-game .column-wrap .sx-wrap .item-text .color-f0f0f0 {
+          width: 100%;
+          height: 1px;
+          background-color: #f0f0f0; }
+    .home-game .column-wrap .other-wrap > div {
+      -webkit-column-break-inside: avoid;
+              break-inside: avoid;
+      margin-bottom: 50px;
+      font-size: 0; }
+      .home-game .column-wrap .other-wrap > div a {
+        display: block;
+        -webkit-perspective: 500px;
+                perspective: 500px;
+        position: relative; }
+        .home-game .column-wrap .other-wrap > div a .opposite-container {
+          z-index: 1;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          width: 100%;
+          -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out; }
+        .home-game .column-wrap .other-wrap > div a .item-text {
+          background-color: #fff;
+          color: #222;
+          font-size: 15px;
+          padding: 20px; }
+          .home-game .column-wrap .other-wrap > div a .item-text p:last-child {
+            color: #a2b2cd;
+            font-size: 12px;
+            margin-right: 10px;
+            font-weight: 900; }
+          .home-game .column-wrap .other-wrap > div a .item-text .triangle-left {
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 10px solid #a2b2cd;
+            margin-top: 5px; }
+        .home-game .column-wrap .other-wrap > div a:hover .opposite-container {
+          opacity: 1; }
 
 .gotop{
-    width:40px;
-    height:40px;
-    line-height:40px;
-    background: url("../img/up.png");
-    background-color: #eee;
+    width:138px;
+    height:219px;
+    line-height:219px;
+    background: url("../img/wechat.png");
     color:#fff;
     text-align:center;
     position:fixed;
@@ -3568,7 +3570,7 @@ Copyright (c) 2014 Daniel Eden
     cursor:pointer;
     font-size:16px;
     display: none;
-    opacity: 0.7;
+    opacity: 1;
     font-weight: bold;
     border-radius: 5px;
     overflow: hidden;
@@ -3594,7 +3596,8 @@ Copyright (c) 2014 Daniel Eden
         width: 100%; }
     .header .header-con .header-con-nav {
       padding-left: 5%;
-      width: 70%; }
+      width: 80%;
+      height: 100%; }
       .header .header-con .header-con-nav a {
         color: #333;
         font-size: 16px;
@@ -3614,95 +3617,17 @@ Copyright (c) 2014 Daniel Eden
         padding-bottom: 14px;
         border-bottom: 4px solid #1f86f9; }
 
-.big-w {
-  height: 442px; }
-
-.intro {
-  height: 400px;
-  margin-top: 50px !important; }
-  .intro .intro-img, .intro .intro-text {
-    width: 49%; }
-  .intro .intro-img img {
-    float: left;
-    text-align: left;
-    width: 476px;
-    height: 290px; }
-  .intro .intro-text {
-    margin-left: 2%; }
-    .intro .intro-text .intro-text-top {
-      display: inline-block;
-      vertical-align: middle; }
-      .intro .intro-text .intro-text-top .game-icon {
-        display: inline-block;
-        vertical-align: middle;
-        width: 80px;
-        height: 80px; }
-      .intro .intro-text .intro-text-top span {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 30px; }
-      .intro .intro-text .intro-text-top span.game-name {
-        font-size: 24px;
-        color: #2d8efa;
-        font-weight: 900;
-        padding-bottom: 10px;
-        border-bottom: 4px solid #2d8efa; }
-    .intro .intro-text p:nth-of-type(1) {
-      color: #4f4f4f;
-      font-size: 22px;
-      padding: 5px 0;
-      font-family: MyriadPro-Regular;
-      white-space: nowrap; }
-    .intro .intro-text p:nth-of-type(2) {
-      color: #7d7d7d;
-      font-size: 14px;
-      padding-top: 25px;
-      line-height: 30px; }
-    .intro .intro-text .intro-text-btn {
-      margin-top: 50px; }
-      .intro .intro-text .intro-text-btn button:nth-of-type(1) {
-        background-color: #f72051;
-        color: #fff;
-        border-radius: 15px;
-        margin-right: 20px;
-        font-weight: 600;
-        padding: 5px 30px; }
-      .intro .intro-text .intro-text-btn button:nth-of-type(2) {
-        background: #fff;
-        color: #f72051;
-        border: 1px solid #f72051;
-        border-radius: 15px;
-        padding: 5px 30px; }
-
-.bg {
-  width: 100%;
-  height: 460px; }
-  .bg .intro-text {
-    margin-top: 60px; }
-  .bg .intro-img .role {
-    height: 401px;
-    float: left;
-    text-align: left;
-    margin-top: 25px; }
-  .bg .intro-img .shanxirole {
-    width: 407px;
-    margin-left: 60px; }
-
-.bg-sx {
-  background: url("../img/shanxinbg.png") no-repeat;
-  background-size: 100% 100%; }
-
-.bg-sc {
-  background: url("../img/scbg.jpg") no-repeat;
-  background-size: 100% 100%; }
+.min-heigth {
+  min-height: 400px; }
 
 .news {
   width: 100%;
-  margin-top: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: #fcfcfc; }
   .news .title {
     position: relative;
-    padding: 15px 0; }
+    padding: 5px 0; }
     .news .title span {
       padding-left: 15px;
       font-weight: 600;
@@ -3713,39 +3638,187 @@ Copyright (c) 2014 Daniel Eden
       color: #979797;
       font-size: 17px;
       font-weight: 600; }
-  .news .news-list {
-    padding-top: 36px; }
-    .news .news-list li {
+  .news .news-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    .news .news-wrap .news-list, .news .news-wrap .news-block {
+      border: 1px solid #ebebeb;
+      padding: 0 20px; }
+    .news .news-wrap .news-list {
+      -webkit-box-flex: 3;
+          -ms-flex-positive: 3;
+              flex-grow: 3;
+      margin-right: 15px;
+      padding-top: 20px; }
+      .news .news-wrap .news-list .news-item {
+        padding: 20px 0;
+        border-bottom: 1px dotted #e2e2e2; }
+        .news .news-wrap .news-list .news-item:last-child {
+          border: none; }
+        .news .news-wrap .news-list .news-item .news-title {
+          color: #666;
+          font-weight: 900;
+          font-size: 14px; }
+          .news .news-wrap .news-list .news-item .news-title img {
+            margin-right: 15px; }
+          .news .news-wrap .news-list .news-item .news-title:hover {
+            color: #2d8efa;
+            text-decoration: underline; }
+        .news .news-wrap .news-list .news-item .news-time {
+          font-size: 12px;
+          color: #c9c9c9; }
+    .news .news-wrap .news-block {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      padding: 10px; }
+      .news .news-wrap .news-block a {
+        display: block;
+        margin-bottom: 10px;
+        background: #3085a3; }
+        .news .news-wrap .news-block a:hover img {
+          opacity: 0.8; }
+        .news .news-wrap .news-block a img {
+          display: block;
+          width: 100%;
+          opacity: 1;
+          -webkit-transition: opacity 0.35s;
+          transition: opacity 0.35s; }
+
+div .title {
+  position: relative;
+  padding: 5px 0; }
+  div .title span {
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #222;
+    border-left: 4px solid #2d8efa; }
+  div .title a {
+    color: #979797;
+    font-size: 17px;
+    font-weight: 600; }
+div .game {
+  padding-top: 20px !important;
+  font-size: 0;
+  position: relative; }
+  div .game .item {
+    float: left;
+    box-sizing: border-box;
+    margin-right: 2%;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    width: 32%; }
+    div .game .item > a {
+      display: inline-block;
+      background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+      background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+      overflow: hidden; }
+    div .game .item > a:hover img:nth-of-type(1) {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+    div .game .item img:nth-of-type(1) {
+      position: relative;
       width: 100%;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      margin-bottom: 45px; }
-      .news .news-list li img {
+      position: relative;
+      width: calc(100% + 60px) !important;
+      -webkit-transform: translate3d(-50px, 0, 0);
+              transform: translate3d(-50px, 0, 0);
+      opacity: 1;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s; }
+    div .game .item .item-text {
+      width: 100%;
+      margin: 0 auto;
+      padding: 16px 20px 0;
+      text-align: left;
+      padding-top: 10px;
+      background-color: #fff; }
+      div .game .item .item-text p:nth-of-type(1) {
+        font-size: 18px;
+        color: #222;
+        cursor: pointer;
+        font-weight: 900; }
+      div .game .item .item-text p:nth-of-type(2) {
+        margin-top: 6px;
+        text-align: left;
+        line-height: 22px;
+        font-size: 13px;
+        color: #a9a9a9;
+        font-weight: 700;
+        margin-bottom: 20px; }
+      div .game .item .item-text p:nth-of-type(3) {
+        text-align: right;
+        color: #9db2c5;
+        font-size: 12px;
+        padding: 6px 0 10px 0; }
+      div .game .item .item-text .color-f0f0f0 {
+        width: 100%;
+        height: 1px;
+        background-color: #f0f0f0; }
+    div .game .item .new {
+      position: absolute;
+      right: -4px;
+      top: -4px;
+      z-index: 9; }
+    div .game .item .popover {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 50%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      opacity: 1;
+      vertical-align: middle;
+      padding-top: 15px;
+      -webkit-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      display: none; }
+      div .game .item .popover span {
         display: inline-block;
-        width: 220px;
-        height: 169px; }
-      .news .news-list li .content {
-        margin-top: 5px;
-        margin-left: 100px; }
-        .news .news-list li .content .head a {
-          font-size: 18px;
-          color: #333;
-          text-decoration: underline;
-          font-weight: 700; }
-        .news .news-list li .content .head a:visited {
-          color: #2d8efa; }
-        .news .news-list li .content .head .time {
-          font-size: 14px;
-          color: #87878a;
-          font-weight: 600;
-          padding-top: 15px; }
-        .news .news-list li .content .brief {
-          padding-top: 26px; }
-          .news .news-list li .content .brief p {
-            font-size: 13px;
-            color: #87878a;
-            line-height: 20px; }
+        font-size: 10px;
+        color: #222;
+        padding-bottom: 5px;
+        width: 100%;
+        font-weight: 800; }
+      div .game .item .popover span.red {
+        color: red;
+        padding-bottom: 10px; }
+      div .game .item .popover ul {
+        float: left;
+        text-align: right;
+        padding-left: 34px;
+        padding-bottom: 8px; }
+        div .game .item .popover ul li {
+          float: left;
+          background: url("../img/star.png") no-repeat center;
+          background-size: 100%;
+          width: 12px;
+          height: 12px;
+          margin-left: 5px; }
+      div .game .item .popover .QRcode {
+        margin-bottom: 5px;
+        width: 65px;
+        height: 65px; }
+      div .game .item .popover button.download {
+        width: 96px;
+        height: 24px;
+        border-radius: 10px;
+        background-color: #3e8afa;
+        font-size: 14px;
+        color: #f8f8f8;
+        text-align: center;
+        line-height: 10px; }
+    div .game .item:hover .popover {
+      display: block; }
+  div .game .item:nth-child(3n) {
+    margin-right: 0; }
 
 .focusimg {
   height: 390px; }
@@ -3798,6 +3871,9 @@ Copyright (c) 2014 Daniel Eden
         font-weight: 500; }
 
 /* module: 布局 */
+*{
+  box-sizing: border-box;
+}
 html,body{
   width: 100%;
   height: 100%;
@@ -3889,10 +3965,7 @@ html,body{
 .clearfix{
   zoom: 1;
 }
-.margin{
-  width: 980px;
-  margin: 0 auto;
-}
+
 button{
   display: inline-block;
   padding: 6px 12px;
@@ -3965,9 +4038,16 @@ button{
   height: 20px;
   background-color: #fff; }
 
-/* 新闻标志 */
-
-
+.margin{
+  width: 980px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1025px){
+  .margin{
+    width: 1025px;
+    margin: 0 auto;
+  }
+}
 
 .activity {
   margin-top: 50px; }
@@ -4013,65 +4093,67 @@ button{
           font-size: 14px;
           line-height: 27px; }
 
+.detail-wrap {
+  background-color: #f5f5f5;
+  padding-bottom: 50px; }
+
 .detail {
-  margin: 70px auto 40px; }
+  border: 1px solid #d7d3d3;
+  color: #464545;
+  background: #fff;
+  overflow: hidden;
+  padding: 30px 80px 0; }
   .detail .title {
-    font-size: 18px;
     color: #222;
-    font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
-    margin-bottom: 16px;
-    font-weight: bolder; }
+    border-bottom: 1px solid #d8d8d8;
+    text-align: center;
+    font: 700 28px/50px 'microsoft yahei';
+    padding: 20px;
+    margin-bottom: 40px; }
   .detail .date {
-    display: inline-block;
-    font-size: 13px;
+    display: block;
     color: #2d8efa;
-    margin-left: 10px;
-    margin-bottom: 40px;
-    font-weight: bolder; }
+    font: 900 13px/20px 'microsoft yahei';
+    border: none; }
   .detail .img-wrap {
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   .detail strong {
     font-size: 16px;
     color: #3e3e3e; }
   .detail big {
     font-weight: bolder; }
   .detail p {
-    font-size: 13px;
-    color: #87878a;
-    line-height: 25px;
-    text-indent: 30px;
+    color: #343434;
     letter-spacing: 2px;
-    font-weight: 600;
-    line-height: 28px;
-    text-indent: 2em; }
+    text-indent: 2em;
+    font: 600 14px/28px "microsoft yahei"; }
   .detail .illustration {
     width: 100%;
     height: 280px;
     margin: 30px 0px; }
-
-.followMe {
-  text-align: center;
-  margin-bottom: 20px; }
-  .followMe .wechatQR {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    margin-bottom: 20px; }
-  .followMe p {
-    font-size: 14px;
-    color: #87878a;
-    font-weight: 600;
-    line-height: 25px; }
-
-.margin-auto {
-  display: inherit;
-  margin: 20px auto;
-  text-align: center; }
-
-.img-auto {
-  width: 68%;
-  margin: 20px auto 0px; }
+  .detail .followMe {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px; }
+    .detail .followMe .wechatQR {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px; }
+    .detail .followMe p {
+      font-size: 14px;
+      color: #87878a;
+      font-weight: 600;
+      line-height: 25px; }
+  .detail .margin-auto {
+    display: inherit;
+    margin: 20px auto;
+    text-align: center; }
+  .detail .img-auto {
+    width: 68%;
+    margin: 20px auto 10px; }
 
 .loseinself {
   margin: 70px auto 40px;
@@ -4190,7 +4272,7 @@ html {
 /* if you don't have full control over `img` tags (if you have to overcome attributes), consider adding height: auto */
 img,
 object,
-embed {max-width: 100%;}
+embed {}
 
 /*
    Note: keeping IMG here will cause problems if you're using foreground images as sprites.

@@ -16,7 +16,16 @@
     <link rel="shortcut icon" href="./img/quanlai.png">
     <!--基础CSS引用-->
 
-    <link rel="stylesheet" href="dist/css/main.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?65d0ae7ac03b159007d0a1a38244ee99";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
 
 
 </head>
@@ -29,7 +38,7 @@
         <div class="header-con-nav fr">
             <a ui-sref-active="active-nav" ui-sref="home">首页</a>
             <a ui-sref-active="active-nav" ui-sref="gemeCenter">游戏中心</a>
-            <a ui-sref-active="active-nav" ui-sref="newsActivity">新闻活动</a>
+            <a ui-sref-active="active-nav" ui-sref="newsActivity">新闻资讯</a>
             <a ui-sref-active="active-nav" ui-sref="joinUs">加入我们</a>
             <a ui-sref-active="active-nav" ui-sref="aboutus">关于我们</a>
         </div>
@@ -39,7 +48,7 @@
 <!-- 路由界面 -->
 <div class="container" ui-view></div>
 
-<div class="break-line"></div>
+<!--<div class="break-line"></div>-->
 <!--尾部导航栏-->
 <div class="footer-action">
     <div class="margin clearfix">
@@ -47,7 +56,7 @@
         <ul class="footer-nav fl">
             <li><a ui-sref-active="active-nav" ui-sref="home">首页</a></li>
             <li><a ui-sref-active="active-nav" ui-sref="gemeCenter">游戏中心</a></li>
-            <li><a ui-sref-active="active-nav" ui-sref="newsActivity">新闻活动</a></li>
+            <li><a ui-sref-active="active-nav" ui-sref="newsActivity">新闻资讯</a></li>
             <li><a ui-sref-active="active-nav" ui-sref="joinUs">加入我们</a></li>
             <li><a ui-sref-active="active-nav" ui-sref="loseinself">防沉迷</a></li>
             <li><a ui-sref-active="active-nav" ui-sref="parentcustody">家长监护</a></li>
@@ -64,12 +73,15 @@
         <div class="txt">
             京ICP备17008491号-4 京网文[2017]2215-220号 <br>
             增值电信业务经营许可证 京B2-20171057 <br>
+            <img src="./img/gongan.png" alt="" style="vertical-align: middle;"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802024679" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p style="height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010802024679号</p></a> <br>
+
             健康游戏公告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防上当受骗 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活 <br>
             未满18周岁的未成年人用户请在家长的监督下进行游戏 <br>
             《网络游戏管理暂行办法》第九条 用户纠纷处理
         </div>
     </div>
 </div>
+
 <!--回到顶部-->
 <div class="gotop"></div>
 <!-- 使用require加载js -->

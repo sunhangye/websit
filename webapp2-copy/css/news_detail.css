@@ -1,62 +1,64 @@
+.detail-wrap {
+  background-color: #f5f5f5;
+  padding-bottom: 50px; }
+
 .detail {
-  margin: 70px auto 40px; }
+  border: 1px solid #d7d3d3;
+  color: #464545;
+  background: #fff;
+  overflow: hidden;
+  padding: 30px 80px 0; }
   .detail .title {
-    font-size: 18px;
     color: #222;
-    font-family: "MicrosoftYaHei", Helvetica, Arial, sans-serif;
-    margin-bottom: 16px;
-    font-weight: bolder; }
+    border-bottom: 1px solid #d8d8d8;
+    text-align: center;
+    font: 700 28px/50px 'microsoft yahei';
+    padding: 20px;
+    margin-bottom: 40px; }
   .detail .date {
-    display: inline-block;
-    font-size: 13px;
+    display: block;
     color: #2d8efa;
-    margin-left: 10px;
-    margin-bottom: 40px;
-    font-weight: bolder; }
+    font: 900 13px/20px 'microsoft yahei';
+    border: none; }
   .detail .img-wrap {
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   .detail strong {
     font-size: 16px;
     color: #3e3e3e; }
   .detail big {
     font-weight: bolder; }
   .detail p {
-    font-size: 13px;
-    color: #87878a;
-    line-height: 25px;
-    text-indent: 30px;
+    color: #343434;
     letter-spacing: 2px;
-    font-weight: 600;
-    line-height: 28px;
-    text-indent: 2em; }
+    text-indent: 2em;
+    font: 600 14px/28px "microsoft yahei"; }
   .detail .illustration {
     width: 100%;
     height: 280px;
     margin: 30px 0px; }
-
-.followMe {
-  text-align: center;
-  margin-bottom: 20px; }
-  .followMe .wechatQR {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    margin-bottom: 20px; }
-  .followMe p {
-    font-size: 14px;
-    color: #87878a;
-    font-weight: 600;
-    line-height: 25px; }
-
-.margin-auto {
-  display: inherit;
-  margin: 20px auto;
-  text-align: center; }
-
-.img-auto {
-  width: 68%;
-  margin: 20px auto 0px; }
+  .detail .followMe {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px; }
+    .detail .followMe .wechatQR {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px; }
+    .detail .followMe p {
+      font-size: 14px;
+      color: #87878a;
+      font-weight: 600;
+      line-height: 25px; }
+  .detail .margin-auto {
+    display: inherit;
+    margin: 20px auto;
+    text-align: center; }
+  .detail .img-auto {
+    width: 68%;
+    margin: 20px auto 10px; }
 
 .loseinself {
   margin: 70px auto 40px;

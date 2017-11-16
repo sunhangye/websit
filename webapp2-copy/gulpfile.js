@@ -19,6 +19,7 @@ var htmlmin = require('gulp-htmlmin'), //html压缩
   ngAnnotate = require('gulp-ng-annotate'),//angular依赖
   ngmin = require('gulp-ngmin'),//angular依赖
   notify = require('gulp-notify');//提示信息
+  browserSync = require('browser-sync').create();
 
 // 压缩html
 gulp.task('html', function () {
@@ -32,7 +33,7 @@ gulp.task('html', function () {
     minifyJS: true,//压缩页面JS
     minifyCSS: true//压缩页面CSS
   };
-  return gulp.src('view/*.html')
+  return gulp.src('src/*.html')
     .pipe(rev())
     .pipe(htmlmin(htmlOptions))
     .pipe(gulp.dest('./dist'))
@@ -52,8 +53,7 @@ gulp.task('img', function () {
   };
   return gulp.src('img/**/*')
     .pipe(imagemin(imgOption))
-    .pipe(gulp.dest('./dist/img/'))
-    .pipe(notify({message: 'img task ok'}));
+    .pipe(gulp.dest('src/img/'))
 });
 
 // 合并、压缩、重命名css
@@ -78,16 +78,15 @@ gulp.task('css', function () {
     .pipe(minifycss(cssOption))
     .pipe(gulp.dest('src/css'))
     .pipe(gulp.dest('dist/css'))
-    .pipe(notify({message: 'css task ok'}));
 });
 
 // 检查js
-gulp.task('lint', function () {
-  return gulp.src(['js/**/*.js', 'js/*.js'])
+/*gulp.task('lint', function () {
+  return gulp.src(['js/!**!/!*.js', 'js/!*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(notify({message: 'lint task ok'}));
-});
+});*/
 
 // 合并、压缩js文件
 gulp.task('js', function () {
@@ -96,22 +95,31 @@ gulp.task('js', function () {
     compress: true//类型：Boolean 默认：true 是否完全压缩
     // preserveComments: 'all' //保留所有注释}//排除混淆关键字
   };
-  return gulp.src(['js/**/*.js', '!js/main.js'])
+  return gulp.src(['js/**/*.js', '!js/all.js', '!js/all.min.js'])
     .pipe(concat('all.js'))
     .pipe(ngAnnotate())
     .pipe(ngmin({dynamic: false}))
-    .pipe(gulp.dest('js'))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('src/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('js'))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('src/js'))
     .pipe(notify({message: 'js task ok'}));
+});
+
+gulp.task('browser-sync', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./",
+      server: "./"
+    }
+  });
+
+
 });
 
 // 默认任务
 gulp.task('default', function () {
-  gulp.run('img', 'css', 'js', 'html');
+  gulp.run('img', 'css', 'js', 'html', 'browser-sync');
 
   // 监听html文件变化
   gulp.watch('view/*.html', function () {
@@ -122,7 +130,7 @@ gulp.task('default', function () {
   gulp.watch(['css/**/*.css', '!css/all.css', '!css/all.min.css'], ['css']);
 
   // Watch .js files
-  gulp.watch(['js/**/*.js', '!js/main.js'], ['js']);
+  gulp.watch(['js/*.js', '!js/main.js'], ['js']);
 
   // Watch image files
   gulp.watch('img/*', ['img']);
